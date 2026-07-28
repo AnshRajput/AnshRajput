@@ -1,0 +1,12 @@
+# Only needed to redo the portrait (clean_photo.py + render_portrait.py).
+# The daily graph refresh deliberately needs none of this -- it is stdlib only,
+# so the cron job stays lightweight and never installs image tooling.
+#
+#   python3.11 -m venv .venv && .venv/bin/pip install -r tools/requirements-art.txt
+#
+# Pinned to 3.11: OpenCV 5 dropped CascadeClassifier and rembg's onnxruntime
+# wheels lag new Python releases.
+Pillow
+numpy
+opencv-python-headless
+rembg[cpu]
