@@ -11,16 +11,18 @@ from theme import ACCENT, BG, DIM, GREEN, MONO, PHOSPHOR, RULE, TRACK, esc, fram
 OUT = Path(__file__).resolve().parent.parent / "sysinfo.svg"
 
 HANDLE = "ANSHRAJPUT"
-TAGLINE = "software engineer / ships product"
+TAGLINE = "senior software engineer @ rentok"
 
 # --- edit these ------------------------------------------------------------
+# Values run ~40 chars max before they collide with the right edge at 11px.
 ROWS = [
-    ("focus", "on-device ai, systems"),
-    ("stack", "python, typescript, flutter"),
-    ("building", "dhruva - local llm on mobile"),
-    ("shipped", "pawpilot, mantra infotech"),
-    ("locale", "in / utc+05:30"),
-    ("status", "operational"),
+    ("focus", "mobile · applied ai"),
+    ("stack", "flutter · nestjs · next.js · node"),
+    ("native", "kotlin · swift"),
+    ("building", "on-device + agentic ai"),
+    ("flagship", "dhruva · pawpilot · parkos"),
+    ("shipped", "31 products · 4+ yrs"),
+    ("status", "open to work"),
 ]
 # ---------------------------------------------------------------------------
 
@@ -28,7 +30,7 @@ ROWS = [
 # side by side in the README (360w portrait and 460w panel both land ~395 tall).
 W, H = 460, 396
 PAD = 18
-ROW_Y, ROW_PITCH, VAL_X = 152, 30, 128
+ROW_Y, ROW_PITCH, VAL_X = 148, 27, 128
 STEP = 0.09  # seconds between rows
 PREVIEW = os.environ.get("PREVIEW") == "1"
 
@@ -81,7 +83,7 @@ def main():
     # footer
     fy = H - PAD - 10
     s.append(f'<line x1="{PAD}" y1="{fy - 16}" x2="{W - PAD}" y2="{fy - 16}" stroke="{RULE}"/>')
-    s.append(label(PAD, fy, "no recruiters (c) rev 2.6", 9, DIM))
+    s.append(label(PAD, fy, "ghaziabad, in // utc+05:30", 9, DIM))
     s.append(label(W - PAD, fy, ">>>", 9, ACCENT, anchor="end"))
 
     s.append(f'<rect width="{W}" height="{H}" fill="url(#sl2)" style="pointer-events:none"/>')
