@@ -1,5 +1,3 @@
-`ansh gandharva — software engineer`
-
 <div align="center">
 
 <h3><code>$ cat contributions.log</code></h3>
