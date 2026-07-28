@@ -2,7 +2,7 @@
 
 <h3><code>$ cat contributions.log</code></h3>
 
-<img src="./graph.svg" width="820" alt="Contribution calendar" />
+<img src="https://raw.githubusercontent.com/AnshRajput/AnshRajput/main/graph.svg" width="820" alt="Contribution calendar" />
 
 <br><br>
 
@@ -10,8 +10,8 @@
 
 <table>
   <tr>
-    <td valign="top"><img src="./portrait.svg" width="360" alt="ASCII portrait" /></td>
-    <td valign="top"><img src="./sysinfo.svg" width="460" alt="System info panel" /></td>
+    <td valign="top"><img src="https://raw.githubusercontent.com/AnshRajput/AnshRajput/main/portrait.svg" width="360" alt="ASCII portrait" /></td>
+    <td valign="top"><img src="https://raw.githubusercontent.com/AnshRajput/AnshRajput/main/sysinfo.svg" width="460" alt="System info panel" /></td>
   </tr>
 </table>
 
